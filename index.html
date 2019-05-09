@@ -8,47 +8,66 @@
 	  <link rel="stylesheet" href="stip.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
+	 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     <title>Hello, world!</title>
   </head>
   <body>
   
-<!-- First Form -->
-<div><h2>My Form</h2></div>
+
+<div><h2 class="animated zoomIn" >My Form</h2></div>
 	  <div>
 <form id="form">
-    <label for="firstN">First Name:</label>
+    <label for="firstN" class="animated zoomIn">First Name:</label>
     <input type="text" id="firstN" name="first">
 <br>
-    <label for="lastN">Last Name:</label>
+    <label for="lastN" class="animated zoomIn">Last Name:</label>
     <input type="text" id="lastN" name="last">
 <br>
-    <label for="email">Email:</label>
+    <label for="email" class="animated zoomIn">Email:</label>
     <input type="email" id="email" name="email">
 <br>
-	<p>Grade:</p>
-<select name="grade">
-    <option value="Freshman">Freshman</option>
+	<!--<p>Grade:</p>-->
+<select name="grade" class="animated zoomIn">
+       <option value="Freshman">Grade</option>
+	<option value="Freshman">Freshman</option>
     <option value="Softmore">Softmore</option>
     <option value="Jounior">Jounior</option>
     <option value="Senior">Senior</option>
 	<option value="Gradute">Gradute</option>
   </select>
-<br>
-    <label for="password">Password:</label>
+<br><br>
+    <label for="password" class="animated zoomIn">Password:</label>
     <input type="password" id="password" name="password">
 <br>
-	<label for="repassword">Re-Enter Password:</label>
+	<label for="repassword" class="animated zoomIn">Re-Enter Password:</label>
     <input type="repassword" id="repassword" name="repassword">
 	<b><span id="error"></span></b>
 <br>
+
     <input type="submit" value="Submit" />
 
 </form></div>
+
+
+<div class="modal fade" id="formValidation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header well text-center theme-background-blue">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> 
+
+	<div id="message-area">
+	    
+	</div>
+
+                  </div> 
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="../4-18-2019/tip.js"> </script>
+    <script src="tip.js"> </script>
   </body>
 </html>
